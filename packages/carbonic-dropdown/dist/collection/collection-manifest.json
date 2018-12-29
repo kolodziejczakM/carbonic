@@ -1,0 +1,61 @@
+{
+  "components": [
+    {
+      "tag": "carbonic-dropdown",
+      "dependencies": [],
+      "componentClass": "CarbonicDropdown",
+      "componentPath": "components/carbonic-dropdown/carbonic-dropdown.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/carbonic-dropdown/carbonic-dropdown.css"
+          ]
+        }
+      },
+      "props": [
+        {
+          "name": "chosenOption",
+          "mutable": true,
+          "reflectToAttr": true,
+          "attr": "chosen-option"
+        },
+        {
+          "name": "isExpanded",
+          "type": "Boolean",
+          "mutable": true,
+          "reflectToAttr": true,
+          "attr": "is-expanded",
+          "watch": [
+            "onIsExpandedChange"
+          ]
+        },
+        {
+          "name": "onChangeHandler",
+          "attr": "on-change-handler"
+        },
+        {
+          "name": "options",
+          "mutable": true,
+          "reflectToAttr": true,
+          "attr": "options"
+        }
+      ],
+      "hostElement": {
+        "name": "el"
+      },
+      "events": [
+        {
+          "event": "carbonicDropdownValueChanged"
+        }
+      ],
+      "shadow": true
+    }
+  ],
+  "collections": [],
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "0.15.2",
+    "typescriptVersion": "2.9.2"
+  },
+  "bundles": []
+}

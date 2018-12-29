@@ -1,0 +1,41 @@
+{
+  "components": [
+    {
+      "tag": "carbonic-button",
+      "dependencies": [],
+      "componentClass": "CarbonicButton",
+      "componentPath": "components/carbonic-button/carbonic-button.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/carbonic-button/carbonic-button.css"
+          ]
+        }
+      },
+      "props": [
+        {
+          "name": "label",
+          "type": "String",
+          "reflectToAttr": true,
+          "attr": "label"
+        }
+      ],
+      "hostElement": {
+        "name": "el"
+      },
+      "events": [
+        {
+          "event": "carbonicButtonClicked"
+        }
+      ],
+      "shadow": true
+    }
+  ],
+  "collections": [],
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "0.15.2",
+    "typescriptVersion": "2.9.2"
+  },
+  "bundles": []
+}
