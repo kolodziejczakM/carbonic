@@ -1,11 +1,8 @@
 /*! Built with http://stenciljs.com */
-const { h } = window.CarbonicButton;
+import { h } from '../carbonic-button.core.js';
 
 class CarbonicButton {
     constructor() {
-        /**
-         * Text visible on the button
-         */
         this.label = 'Click me';
         this.onClickHandler = () => {
             this.carbonicButtonClicked.emit();
@@ -33,7 +30,7 @@ class CarbonicButton {
             "cancelable": true,
             "composed": true
         }]; }
-    static get style() { return ":host,\n:host * {\n    -webkit-box-sizing: border-box;\n    box-sizing: border-box;\n}\n\nbutton {\n    cursor: pointer;\n    color: black;\n    font-size: 12px;\n    border: 1px solid black;\n    background: transparent;\n    outline: none;\n    padding: 10px;\n}\n\nbutton:hover {\n    background: gray;\n}"; }
+    static get style() { return ":host,:host *{-webkit-box-sizing:border-box;box-sizing:border-box}button{cursor:pointer;color:#000;font-size:12px;border:1px solid #000;background:transparent;outline:none;padding:10px}button:hover{background:grey}"; }
 }
 
 export { CarbonicButton };
