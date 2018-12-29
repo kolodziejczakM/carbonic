@@ -1,0 +1,2 @@
+// CarbonicDropdown: Host Data, ES Module/es5 Target
+export var CarbonicDropdown = ["carbonic-dropdown","rdyatct7",1,[["chosenOption",2],["el",64],["isExpanded",2,1,"is-expanded",4],["onChangeHandler",1],["options",2]],1];

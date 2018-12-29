@@ -1,4 +1,7 @@
-export class CarbonicDropdown {
+/*! Built with http://stenciljs.com */
+import { h } from '../carbonic-dropdown.core.js';
+
+class CarbonicDropdown {
     constructor() {
         this.isExpanded = false;
         this.chosenOption = { label: '(no options)', value: null };
@@ -76,5 +79,7 @@ export class CarbonicDropdown {
             "cancelable": true,
             "composed": true
         }]; }
-    static get style() { return "/**style-placeholder:carbonic-dropdown:**/"; }
+    static get style() { return ".sc-carbonic-dropdown-h, .sc-carbonic-dropdown-h   *.sc-carbonic-dropdown{-webkit-box-sizing:border-box;box-sizing:border-box}.sc-carbonic-dropdown-h{--light-gray:#d3d3d3;--gray:#a9a9a9;--black:#000;--white:#fff;--icon-dimension:25px;font-family:\"sans-serif, Helvetica\";font-size:14px;cursor:pointer;color:var(--black)}.dropdown.sc-carbonic-dropdown{position:relative;border:1px solid var(--gray);border-radius:5px}.selected-option.sc-carbonic-dropdown{display:-ms-flexbox;display:flex;-ms-flex-pack:justify;justify-content:space-between;-ms-flex-align:center;align-items:center;padding:5px 10px}.options.sc-carbonic-dropdown{display:none}.options--expanded.sc-carbonic-dropdown{position:absolute;border:1px solid var(--gray);width:100%;display:block;padding:0;margin:0}.option.sc-carbonic-dropdown{padding:10px;background:var(--white)}.option.sc-carbonic-dropdown:hover{background:var(--light-gray)}.sc-carbonic-dropdown-s > *{width:var(--icon-dimension);height:var(--icon-dimension)}"; }
 }
+
+export { CarbonicDropdown };
